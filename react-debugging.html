@@ -64,12 +64,14 @@
         }
         // No need to change anything ABOVE this line ^
 
+// Create React Fragments, line 71 needs to call drawCard function, line 74 use camelCase for onclick
         return (
+          <>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}>
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
@@ -81,8 +83,9 @@
               )
             })}
           </div>
-        )
-      }
+        </>
+      )
+     }
 
       // No need to change anything below this line
 
